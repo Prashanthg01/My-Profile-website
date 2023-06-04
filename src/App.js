@@ -1,6 +1,7 @@
 import './App.css';
 // import Giffy from './images/giffy.gif';
 import StaticInfo from './Static-home/main-component';
+import Application from './Tab/navigation-bar';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
           <StaticInfo/>
         </div>
         <div className='card-2'>
-
+          <Application/>
         </div>
       </div> 
       

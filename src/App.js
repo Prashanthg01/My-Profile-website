@@ -5,7 +5,7 @@ import Application from './Tab/navigation-bar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg">
       {/* <img src={Giffy} alt='space' /> */}
       <div className='main-card'>
         <div className='card-1'>

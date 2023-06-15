@@ -5,13 +5,13 @@ import Application from './Tab/navigation-bar';
 
 function App() {
   return (
-    <div className="App bg">
+    <div className="App">
       {/* <img src={Giffy} alt='space' /> */}
       <div className='main-card'>
         <div className='card-1'>
           <StaticInfo/>
         </div>
-        <div className='card-2'>
+        <div className='card-2 bg'>
           <Application/>
         </div>
       </div> 

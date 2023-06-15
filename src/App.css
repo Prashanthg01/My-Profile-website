@@ -42,7 +42,7 @@
   display: flex;
   justify-content: space-around
   ;
-  background: rgb(111 12 12 / 58%);
+  background: #1a1a1a;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 10px );
   -webkit-backdrop-filter: blur( 5px );
@@ -109,7 +109,7 @@
 }
 .button-d1 a {
   text-decoration: none;
-  color: #000;
+  color: #1a1a1a;
 }
 .active {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -152,7 +152,7 @@
   gap: 15px;
 }
 .nav-main button svg {
-  color: #000;
+  color: #1a1a1a;
 }
 #skills {
   display: flex;
@@ -177,6 +177,16 @@
   font-size: 50px;
   font-weight: 600;
   color: #fff;
+}
+#home h1 {
+  color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    background: #1a1a1a;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 0px 20px;
+    margin: auto;
 }
 .skills-main {
   display: flex;
@@ -300,7 +310,7 @@ svg.header-custom {
 }
 
 .title h1 {
-  background: black;
+  background: #1a1a1a;
   display: inline-block;
   padding: 0px 35px;
   clip-path: polygon(0 0, 100% 0, 85% 100%, 16% 100%);
@@ -331,8 +341,9 @@ svg.header-custom {
 
 .card1 img {
   transform: translateY(15px);
-  width: 200px;
-  height: 120px;
+  aspect-ratio: 1/1;
+  height: 140px;
+  padding: 5px;
 }
 
 .card1 h3 {
@@ -343,15 +354,31 @@ svg.header-custom {
   transform: translateY(10px);
 }
 
-.card1 p {
+.card1 p, .card2 p, .card3 p {
   font-family: 'Abel', sans-serif;
-  color: white;
-  text-align: center;
+  color: rgb(219, 219, 219);
+  text-align: left;
   width: 220px;
-  transform: translateX(12px);
+  font-size: 15px;
 }
+
+.card1 p span, .card2 p span, .card3 p span {
+  font-size: 16px;
+  color: #000;
+  background: #fff;
+  border-radius: 50px;
+  padding: 0px 10px;
+  margin-right: 5px;
+}
+
 .card1, .card2, .card3 {
+  border-radius: 15px;
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  background: #1a1a1a;
 }
 
 .card2 {
@@ -361,7 +388,6 @@ svg.header-custom {
   height: 350px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background: linear-gradient(rgb(93, 94, 170), rgb(93, 66, 103));
   animation: animate 1s linear infinite;
   transition: 0.6s;
   transform: rotateX(75deg) translateY(-200px) translateZ(-100px);
@@ -388,19 +414,20 @@ svg.header-custom {
 }
 
 .card2 img {
+  margin-bottom: 10px;
   transform: translateY(15px);
-  width: 180px;
-  height: 150px;
+  aspect-ratio: 1/1;
+  height: 140px;
+  padding: 10px;
 }
 
 .card3 {
   text-align: center;
   left: 70%;
   width: 250px;
-  height: 350px;
+  height: 375px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background: linear-gradient(#ff5252, #b33939);
   transition: 0.6s;
   transform: rotateX(75deg) translateY(-200px) translateZ(-100px);
   box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
@@ -412,11 +439,26 @@ svg.header-custom {
   transition: 0.6s;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
+.card1 h4, .card2 h4, .card3 h4 {
+  font-size: 16px;
+    background: #fff;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 0px 5px;
+    margin: 2px;
+}
+
+.about-me p {
+  width: auto;
+  text-align: justify;
+}
 
 .card3 img {
+  margin-bottom: 10px;
   transform: translateY(15px);
-  width: 200px;
-  height: 120px;
+  aspect-ratio: 1/1;
+  height: 115px;
+  padding: 5px;
 }
 
 /* ////////////////education page end//////////// */

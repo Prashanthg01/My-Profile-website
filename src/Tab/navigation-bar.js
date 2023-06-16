@@ -1,8 +1,10 @@
-import { School, Home, Info, RocketLaunch, AssignmentInd, WorkspacePremium, Work, EmojiEvents, Hive, PermMedia} from '@mui/icons-material';
+import { School, Home, Info, RocketLaunch, AssignmentInd, WorkspacePremium, Work, EmojiEvents, Hive, PermMedia, Call} from '@mui/icons-material';
 import React, { useState } from 'react';
-import Homepage from './home';
-import Educationpage from './education';
+import Homepage from './Home/home';
+import Educationpage from './Education/education';
 import Skillspage from './skillspage';
+import Projects from './Projects/projects';
+import Contact from './contact';
 
 const Application = () => {
   const [activeContent, setActiveContent] = useState('home');
@@ -18,27 +20,15 @@ const Application = () => {
         <Homepage/>
       )}
 
-      {/* {activeContent === 'about' && (
-        <div id="about" className='blurr-effect'>
-          <h1>Hello, this is about</h1>
-        </div>
-      )} */}
-
       {activeContent === 'education' && (
         <Educationpage/>
       )}
 
       {activeContent === 'projects' && (
         <div id="projects" className='blurr-effect'>
-          <h1>Hello, this is projects</h1>
+          <Projects/>
         </div>
       )}
-
-      {/* {activeContent === 'achivements' && (
-        <div id="achivements" className='blurr-effect'>
-          <h1>Hello, this is achivements</h1>
-        </div>
-      )} */}
 
       {activeContent === 'experience' && (
         <div id="experience" className='blurr-effect'>
@@ -50,9 +40,9 @@ const Application = () => {
         <Skillspage/>
       )}
 
-      {activeContent === 'gallery' && (
-        <div id="gallery" className='blurr-effect'>
-          <h1>Hello, this is gallery</h1>
+      {activeContent === 'contact' && (
+        <div id="contact" className='blurr-effect'>
+          <Contact/>
         </div>
       )}
 
@@ -70,23 +60,17 @@ const Application = () => {
           <School/>
         </button>
         <button
+          onClick={() => handleButtonClick('skills')}
+          className={activeContent === 'skills' ? 'active' : ''}
+        >
+          <Hive/>
+        </button>
+        <button
           onClick={() => handleButtonClick('projects')}
           className={activeContent === 'projects' ? 'active' : ''}
         >
           <RocketLaunch/>
         </button>
-        {/* <button
-          onClick={() => handleButtonClick('achivements')}
-          className={activeContent === 'achivements' ? 'active' : ''}
-        >
-          <EmojiEvents/>
-        </button> */}
-        {/* <button
-          onClick={() => handleButtonClick('about')}
-          className={activeContent === 'about' ? 'active' : ''}
-        >
-          <AssignmentInd/>
-        </button> */}
         <button
           onClick={() => handleButtonClick('experience')}
           className={activeContent === 'experience' ? 'active' : ''}
@@ -94,16 +78,10 @@ const Application = () => {
           <Work/>
         </button>
         <button
-          onClick={() => handleButtonClick('skills')}
-          className={activeContent === 'skills' ? 'active' : ''}
+          onClick={() => handleButtonClick('contact')}
+          className={activeContent === 'contact' ? 'active' : ''}
         >
-          <Hive/>
-        </button>
-        <button
-          onClick={() => handleButtonClick('gallery')}
-          className={activeContent === 'gallery' ? 'active' : ''}
-        >
-          <PermMedia/>
+          <Call/>
         </button>
       </div>
 

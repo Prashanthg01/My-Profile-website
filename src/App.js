@@ -11,7 +11,7 @@ function App() {
         <div className='card-1'>
           <StaticInfo/>
         </div>
-        <div className='card-2 bg'>
+        <div className='card-2'>
           <Application/>
         </div>
       </div> 

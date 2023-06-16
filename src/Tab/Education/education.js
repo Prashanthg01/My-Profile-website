@@ -1,7 +1,7 @@
 import React from "react";
-import Schools from './Documents/school.png'
-import College from './Documents/primary.png'
-import University from './Documents/mortarboard.png'
+import Schools from '../Documents/school.png'
+import College from '../Documents/primary.png'
+import University from '../Documents/mortarboard.png'
 
 export default function Educationpage() {
     return (

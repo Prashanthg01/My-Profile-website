@@ -18,6 +18,14 @@ const imgStyle = {
 export default function Skillspage() {
     return (
         <div id="skills" className='blurr-effect'>
+          <div className="skillstitle">
+              <h1>
+                <span style={{ color: '#ff9f43' }}>S</span>
+                <span style={{ color: '#0abde3' }}>k</span>
+                <span style={{ color: '#ee5253' }}>il</span>
+                <span style={{ color: '#00d2d3' }}>ls</span>
+              </h1>
+            </div>
           <div className='skills-main'>
             <div>
               <img src={ImgReact} alt='react' />

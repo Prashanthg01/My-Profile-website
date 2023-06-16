@@ -12,9 +12,6 @@ export default function Static_info() {
             <SocialIcons/>
             <div className="home-btns-main">
                 <ResumeDownloadButton/>
-                <button className="button-d1">
-                    <a href="/">Go to playground</a>
-                </button>
             </div>
             
         </div>

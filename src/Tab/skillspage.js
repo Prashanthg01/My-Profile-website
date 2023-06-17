@@ -11,10 +11,6 @@ import Python from './Documents/python.png'
 import Linux from './Documents/Linux.png'
 
 
-const imgStyle = {
-    width: '85px'
-  }
-
 export default function Skillspage() {
     return (
         <div id="skills" className='blurr-effect'>
@@ -40,15 +36,15 @@ export default function Skillspage() {
               <p>Python</p>
             </div>
             <div>
-              <img style={imgStyle} src={Js} alt='JavaScript' />
+              <img className="resize-img" src={Js} alt='JavaScript' />
               <p>JavaScript</p>
             </div>
             <div>
-              <img style={imgStyle} src={Html} alt='HTML' />
+              <img className="resize-img" src={Html} alt='HTML' />
               <p>HTML</p>
             </div>
             <div>
-              <img style={imgStyle} src={Css} alt='CSS' />
+              <img className="resize-img" src={Css} alt='CSS' />
               <p>CSS</p>
             </div>
             <div>
@@ -56,11 +52,11 @@ export default function Skillspage() {
               <p>Mysql</p>
             </div>
             <div>
-              <img style={imgStyle} src={Linux} alt='Linus' />
+              <img className="resize-img" src={Linux} alt='Linus' />
               <p>Linux</p>
             </div>
             <div>
-              <img style={imgStyle} src={Figma} alt='Figma' />
+              <img className="resize-img" src={Figma} alt='Figma' />
               <p>Figma</p>
             </div>
             <div>

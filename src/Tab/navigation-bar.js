@@ -5,6 +5,7 @@ import Educationpage from './Education/education';
 import Skillspage from './skillspage';
 import Projects from './Projects/projects';
 import Contact from './contact';
+import Experience from './Experience/experience';
 
 const Application = () => {
   const [activeContent, setActiveContent] = useState('home');
@@ -32,7 +33,7 @@ const Application = () => {
 
       {activeContent === 'experience' && (
         <div id="experience" className='blurr-effect'>
-          <h1>Hello, this is experience</h1>
+          <Experience/>
         </div>
       )}
       

@@ -1,12 +1,14 @@
 import React from "react";
 import LiveDate from './date';
 import Time from './live-time';
+import Prashanth from '../Documents/Prashanth_no_background.png'
 
 export default function Homepage() {
     return (
         <div id="home">
           <div>
-            <Time/>
+            <img className="profile-img" src={Prashanth} alt="profile-image"></img>
+             <Time/>
             <LiveDate/>
           </div>
           <svg className="header-custom">

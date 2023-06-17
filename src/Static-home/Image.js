@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "./Documents/logo.png"
+import Img from "../Tab/Documents/Prashanth_no_background.png"
 
 export default function Profile_Pic() {
     return (

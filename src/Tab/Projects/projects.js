@@ -41,7 +41,7 @@ export default function Projects() {
         </h1>
     </div>
     <div className="project-main">
-      <button onClick={handlePrevClick}><ArrowLeft/></button> {/* Added the Prev button */}
+       {/* Added the Prev button */}
       <div className="project-text-div">
         <h1>Title:</h1>
         <h2>{project.tittle}</h2> {/* Fixed the typo 'tittle' to 'title' */}
@@ -58,7 +58,7 @@ export default function Projects() {
       <div>
         <img src={project.image} alt={project.alt} />
       </div>
-      <button onClick={handleNextClick}><ArrowRight/></button>
+      
       {/* <button onClick={handleMoreClick}>
         {showMore ? "Hide" : "Show"} details
       </button> */}
@@ -66,9 +66,13 @@ export default function Projects() {
       {/* {showMore && <p>{project.description}</p>} */}
       {/* Removed the duplicate project description */}
     </div>
-    <h4>
-    ({index + 1} of {projectList.length})
-    </h4>
+    <div className="arrows">
+      <button onClick={handlePrevClick}><ArrowLeft/></button>
+      <h4>
+      ({index + 1} of {projectList.length})
+      </h4>
+      <button onClick={handleNextClick}><ArrowRight/></button>
+    </div>
     </>
   );
 }
